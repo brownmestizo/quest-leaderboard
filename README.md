@@ -1,6 +1,4 @@
-quest-leaderboard
+CSDS Quest - Leaderboard
 =================
 
-Quest - Leaderboard
-
-Yes! Our leaderboard!
+The best leaderboard ever!
