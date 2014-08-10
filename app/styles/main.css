@@ -4,12 +4,16 @@
     padding: 0.2em 0;
 }
 
-/* Space out content a bit */
+/* Sitewide */
 body {
     background: transparent url('../images/background.jpg');
     background-position: center top;
     background-size: 100% auto;
     color: #FFF;
+    height: 100%;
+    margin-bottom: 1px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -81,6 +85,7 @@ img {
     }
 
 
+/* Maps */
 .Maps {
     padding: 10px;
 }
@@ -89,6 +94,7 @@ img {
     }
 
 
+/* Leaderboard */
 .Leaderboard {
     padding: 10px 20px 0 0;
 }
@@ -97,7 +103,9 @@ img {
     padding: 0;
 }
     .leaderboard {
-        background: #ff9200;
+        background: #ff9200 url('../images/logo-quest.png') center no-repeat;
+        display: block;
+        min-height: 885px;
     }
         .leaderboard img {
             position: absolute;
@@ -111,32 +119,38 @@ img {
         width: 80%;
     }
 
-
-
-table {
-    max-width: 100%;
-    width: 100%;
-}
-    table td {
-        font-size: 36px;
-        padding: 12px 0 12px 0;
-        border-bottom: 1px solid #FFF;
-    }
-    table tr > td:first-child {
-        font-weight: bold;
-        text-align: center;
+    .completed-time {
+        display: inline-block;
+        background: #8bae00;
+        border-radius: 10px;
+        padding: 0 12px 0 12px;
     }
 
-    table td.place {
-        width: 10%;
+    table {
+        max-width: 100%;
+        width: 100%;
+        background: #ff9200;
     }
-    table td.player {
-        width: 60%;
-    }
-    table td.performance {
-        width: 30%;
-    }
+        table td {
+            font-size: 36px;
+            padding: 12px 0 12px 0;
+            border-bottom: 1px solid #FFF;
+        }
+        table tr > td:first-child {
+            font-weight: bold;
+            text-align: center;
+        }
 
-    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-      background-color: #cf7700;
-    }
+        table td.place {
+            width: 10%;
+        }
+        table td.player {
+            width: 60%;
+        }
+        table td.performance {
+            width: 30%;
+        }
+
+        .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+          background-color: #cf7700;
+        }
