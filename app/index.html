@@ -41,37 +41,37 @@
                         <div class="col-lg-6">
                             <img src="images/logo-csds10year.png" class="img-responsive logo-csds10year" />
                         </div>
-                        
+
                         <div class="row instructions">
                             <h2>Join the Quest</h2>
                             <p>Download the CSDS Quest app and follow the on-screen instructions.</p>
 
                                 <div class="logos">
-                                    <img src="images/logo-appstore.png" class="img-responsive logos" />                              
+                                    <img src="images/logo-appstore.png" class="img-responsive logos" />
                                     <img src="images/logo-googleplay.png" class="img-responsive logos googleplay" />
-                                </div>       
+                                </div>
                         </div>
 
                         <div class="spacer"></div>
 
-                        <div class="row wifi">                            
+                        <div class="row wifi">
                             <img src="images/logo-wifi.png" class="img-responsive logo-wifi" />
                             <div class="spacer"></div>
                             <h3>WiFi Name : <strong>CSDS-Guest</strong></h3>
-                            <h3>Password : <strong>CSDS@Block6</strong></h3>                            
-                        </div>                               
+                            <h3>Password : <strong>CSDS@Block6</strong></h3>
+                        </div>
 
                         <div class="CheckIn">
-                            <div class="header"><h1 class="center-block">Level 4 Check-in</h1></div>
+                            <div class="header"><h1 class="center-block">Check-in</h1></div>
                             <div class="checkin block">
                                 <!-- Level 5 Checkin Code -->
                                 <!-- <img src="images/game.checkin.5.svg" class="img-responsive" /> -->
                                 <!-- Level 4 Checkin Code -->
                                 <img src="images/game.checkin.4.svg" class="img-responsive" />
-                            </div>                            
+                            </div>
                         </div>
 
-                            
+
                     </div>
                 </div>
 
@@ -81,10 +81,10 @@
                         <div class="header"><h1 class="center-block">Level 5</h1></div>
                         <div class="maps block level5">
                         </div>
-                        
+
                         <div class="spacer"></div>
 
-                        <div class="header"><h1 class="center-block">You are on Level 4</h1></div>
+                        <div class="header"><h1 class="center-block">Level 4</h1></div>
                         <div class="maps block level4">
                         </div>
                     </div>
@@ -97,68 +97,14 @@
                         <div class="header"><h1 class="center-block">Leaderboard</h1></div>
 
                         <div class="leaderboard block">
-                            <table class="table-hover">
-                                <tr class="complete">
-                                    <td class="place">1</td>
-                                    <td class="player">Raden</td>
-                                    <td class="performance"><span class="completed-time">30:48 <i class="fa fa-check"></i></span></td>
-                                </tr>
-                                <tr class="complete">
-                                    <td>2</td>
-                                    <td>Cassandra</td>
-                                    <td><span class="completed-time">35:13 <i class="fa fa-check"></i></span></td>
-                                </tr>                            
-                                <tr>
-                                    <td>3</td>
-                                    <td>Joshua</td>
-                                    <td>4 badges</td>
-                                </tr>   
-                                <tr>
-                                    <td>4</td>
-                                    <td>Johnathan</td>
-                                    <td>4 badges</td>
-                                </tr>         
-                                <tr>
-                                    <td>5</td>
-                                    <td>Shane</td>
-                                    <td>3 badges</td>
-                                </tr>    
-                                <tr>
-                                    <td>6</td>
-                                    <td>Rebecca</td>
-                                    <td>3 badges</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>Damian</td>
-                                    <td>3 badges</td>
-                                </tr>                                                                                                              
-                                <tr>
-                                    <td>8</td>
-                                    <td>Samson</td>
-                                    <td>3 badges</td>
-                                </tr>    
-                                <tr>
-                                    <td>9</td>
-                                    <td>Hubert Blaine ...</td>
-                                    <td>2 badges</td>
-                                </tr>    
-                                <tr>
-                                    <td>10</td>
-                                    <td>Marc</td>
-                                    <td>2 badges</td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td>Marc</td>
-                                    <td>2 badges</td>
-                                </tr>
+                            <table class="table-hover" id="leaderboardScores">
+
                             </table>
-                            <h1>48 players</h1>
-                        </div>                        
+                            <h1><span id="playerCount"></span> players</h1>
+                        </div>
 
                     </div>
-                </div>    
+                </div>
 
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -171,15 +117,6 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
 
         <!-- build:js scripts/plugins.js -->
         <script src="../bower_components/bootstrap/js/affix.js"></script>
@@ -194,6 +131,8 @@
         <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="../bower_components/bootstrap/js/collapse.js"></script>
         <script src="../bower_components/bootstrap/js/tab.js"></script>
+
+        <script src="../bower_components/firebase/firebase.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
